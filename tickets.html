@@ -7,9 +7,9 @@
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
-    <meta name="description" content="Juliet goes out with a Redhot" />
+    <meta name="description" content="" />
     <meta name="author" content="Chrissy Hughes" />
-    <title>Home</title>
+    <title>About</title>
 
     <!-- Bootstrap core CSS -->
     <link
@@ -24,53 +24,53 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
   </head>
 
-  <body class="text-center" id="home">
+  <body class="text-center" id="tickets">
     <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
       <header class="masthead mb-auto">
         <div class="inner">
           <img
-            src="https://cdn.glitch.com/e6b3dc63-0315-4545-8fc4-aee8965d0097%2Fj-logo-blue-01.svg?v=1579458335126"
+            src="https://cdn.glitch.com/e6b3dc63-0315-4545-8fc4-aee8965d0097%2Fj-logo-purple.svg?v=1579458850139"
             height="100"
             width="100"
           />
           <nav class="nav nav-masthead justify-content-center">
-            <a class="nav-link active" href="/index.html">Home</a>
+            <a class="nav-link" href="/index.html">Home</a>
             <a class="nav-link" href="/about.html">About</a>
             <a class="nav-link" href="/venue.html">Venue</a>
             <a class="nav-link" href="/contact.html">Contact</a>
-            <a class="nav-link" href="/tickets.html">Tickets</a>
+            <a class="nav-link active" href="/tickets.html">Tickets</a>
           </nav>
         </div>
 
-        <!-- Load font awesome icons -->
-        <link
-          rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-        />
+        <div id="eventbrite-widget-container-90536582355"></div>
 
-        <!-- The social media icon bar -->
-        <div class="icon-bar">
-          <a href="https://www.facebook.com/" class="facebook"
-            ><i class="fa fa-facebook"></i
-          ></a>
-          <a href="https://twitter.com/" class="twitter"
-            ><i class="fa fa-twitter"></i
-          ></a>
-        </div>
+        <script src="https://www.eventbrite.ie/static/widgets/eb_widgets.js"></script>
+
+        <script type="text/javascript">
+          var exampleCallback = function() {
+            console.log("Order complete!");
+          };
+
+          window.EBWidgets.createWidget({
+            // Required
+            widgetType: "checkout",
+            eventId: "90536582355",
+            iframeContainerId: "eventbrite-widget-container-90536582355",
+
+            // Optional
+            iframeContainerHeight: 425, // Widget height in pixels. Defaults to a minimum of 425px if not provided
+            onOrderComplete: exampleCallback // Method called when an order has successfully completed
+          });
+        </script>
       </header>
 
       <main role="main" class="inner cover">
-        <h1 class="cover-heading">Juliet goes out with a Redhot</h1>
+        <h1 class="cover-heading"></h1>
+        <p class="lead">Tickets</p>
+        <p class="lead"></p>
+        <p class="lead"></p>
         <p class="lead">
-          A love story based on falling in love and getting hooked... literally
-        </p>
-        <p class="lead">
-          We've added some social issues to the classic Romeo and Juliet story
-          to raise awareness of drug addiction.
-        </p>
-        <p class="lead">All profits go to the Ana Liffey Drug Project</p>
-        <p class="lead">
-          <a href="/#" class="btn btn-lg btn-secondary">Buy Tickets</a>
+          <a href="/#" class="btn btn-lg btn-secondary">Buy Ticktets</a>
         </p>
       </main>
 
